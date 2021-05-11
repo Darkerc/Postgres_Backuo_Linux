@@ -1,0 +1,8 @@
+[Unit]
+Description=My Shell Script
+
+[Service]
+ExecStart=/lib/systemd/system/postgres_backup/pg_backup.sh
+
+[Install]
+WantedBy=multi-user.target
